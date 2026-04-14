@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import IconeLupa from "../componentes/IconeLupa"
+import IconeLupa from "../IconeLupa"
 
 const CampoTextoEstilizado = styled.div`
   display: flex;
