@@ -7,7 +7,7 @@ import { useState } from "react"
 const Overlay = styled.div`
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
 
   display: flex;
