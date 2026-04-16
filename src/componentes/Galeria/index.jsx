@@ -11,14 +11,14 @@ const GaleriaContainer = styled.div`
 `
 
 const SecaoFluida = styled.section`
-    flex-grow: 1;
+    flex-grow   : 1;
     margin-right: 1rem;
 `
 
 const SecaoFotos = styled.section`
-  display: grid;
+  display              : grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap                  : 24px;
 `
 
 

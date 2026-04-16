@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-
-import GandhiSansRegular from './GandhiSans-Regular.otf'
-import GandhiSansBold from './GandhiSans-Bold.otf'
+import GandhiSansRegular     from './GandhiSans-Regular.otf'
+import GandhiSansBold        from './GandhiSans-Bold.otf'
 
 const EstilosGlobais = createGlobalStyle`
     @font-face {
@@ -13,12 +12,12 @@ const EstilosGlobais = createGlobalStyle`
         src: local('Gandhi Sans Bold'), local('GandhiSansBold'), url(${GandhiSansBold});
     }
     html {
-    line-height: 1.15; 
+    line-height             : 1.15; 
     -webkit-text-size-adjust: 100%; 
-    font-family: GandhiSansRegular;
+    font-family             : GandhiSansRegular;
     }
     body {
-    margin: 0;
+    margin    : 0;
     min-height: 100vh;
     }
     main {
@@ -26,18 +25,18 @@ const EstilosGlobais = createGlobalStyle`
     }
     h1 {
     font-size: 2em;
-    margin: 0.67em 0;
+    margin   : 0.67em 0;
     }
     hr {
     box-sizing: content-box; 
-    height: 0; 
-    overflow: visible; 
+    height    : 0; 
+    overflow  : visible; 
     }
     a {
     background-color: transparent;
     }
     abbr[title] {
-    border-bottom: none; 
+    border-bottom  : none; 
     text-decoration: underline; 
     text-decoration: underline dotted; 
     }
@@ -56,9 +55,9 @@ const EstilosGlobais = createGlobalStyle`
     }
     sub,
     sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
+    font-size     : 75%;
+    line-height   : 0;
+    position      : relative;
     vertical-align: baseline;
     }
     sub {
@@ -108,11 +107,11 @@ const EstilosGlobais = createGlobalStyle`
     padding: 0.35em 0.75em 0.625em;
     }
     legend {
-    box-sizing: border-box; 
-    color: inherit; 
-    display: table; 
-    max-width: 100%; 
-    padding: 0; 
+    box-sizing : border-box; 
+    color      : inherit; 
+    display    : table; 
+    max-width  : 100%; 
+    padding    : 0; 
     white-space: normal; 
     }
     progress {

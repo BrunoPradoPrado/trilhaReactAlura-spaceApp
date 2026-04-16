@@ -1,66 +1,65 @@
-import styled from "styled-components"
-import { useState } from "react"
-import { FaHeart } from "react-icons/fa"
-import { CiHeart } from "react-icons/ci"
-import { BsArrowsAngleContract } from "react-icons/bs"
+import styled                 from "styled-components"
+import { useState }           from "react"
+import { FaHeart }            from "react-icons/fa"
+import { CiHeart }            from "react-icons/ci"
 import { AiOutlineExpandAlt } from "react-icons/ai"
-import ImagemZoom from "./ImagemZoom"
+import ImagemZoom             from "./ImagemZoom"
 
 const FigureImagemGaleria = styled.figure`
-  margin: 0;
-  border-radius: 20px;
-  overflow: hidden;
+  margin          : 0;
+  border-radius   : 20px;
+  overflow        : hidden;
   background-color: #03122a;
 
   img {
-    width: 100%;
+    width  : 100%;
     display: block;
   }
 
   figcaption {
     padding: 14px 16px;
-    color: #fff;
+    color  : #fff;
 
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
   }
 
   h3 {
-    margin: 0;
-    font-size: 18px;
+    margin     : 0;
+    font-size  : 18px;
     font-weight: 500;
   }
 
   .infos {
-    display: flex;
+    display       : flex;
     flex-direction: column;
   }
 
   .fonte {
     margin-top: 4px;
-    font-size: 14px;
-    opacity: 0.7;
+    font-size : 14px;
+    opacity   : 0.7;
   }
 
   
   footer {
     display: flex;
-    gap: 12px;
+    gap    : 12px;
   }
 
 
   footer button {
     background: transparent;
-    border: none;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 22px;
+    border    : none;
+    color     : #FFF;
+    cursor    : pointer;
+    font-size : 22px;
   }
 `
 
 const Imagem = ({ foto }) => {
-  const [favorito, setFavorito] = useState(false)
+  const [favorito, setFavorito]   = useState(false)
   const [expandido, setExpandido] = useState(false)
 
   return (
@@ -93,10 +92,10 @@ const Imagem = ({ foto }) => {
 
       {expandido && (
         <ImagemZoom
-          foto={foto}
-          favorito={favorito}
-          onToggleFavorito={() => setFavorito(!favorito)}
-          onClose={() => setExpandido(false)}
+          foto             = {foto}
+          favorito         = {favorito}
+          onToggleFavorito = {() => setFavorito(!favorito)}
+          onClose          = {() => setExpandido(false)}
         />
       )}
 
