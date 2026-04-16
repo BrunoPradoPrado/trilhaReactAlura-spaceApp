@@ -19,7 +19,7 @@ O projeto foi desenvolvido do zero como parte da **trilha de React da Alura**, p
 - 🖼️ Seção de imagens **populares**
 - 🎨 Layout fiel ao **Figma**
 - 🧩 Componentização completa
-- 🌐 Deploy em produção
+- 🌐 Deploy: https://trilha-react-alura-space-app.vercel.app/
 
 ---
 
