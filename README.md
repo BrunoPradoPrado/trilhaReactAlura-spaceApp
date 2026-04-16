@@ -1,16 +1,91 @@
-# React + Vite
+# 🚀 SpaceApp — Galeria Espacial em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![SpaceApp Banner](./public/imagens/logo.png)
 
-Currently, two official plugins are available:
+## 🛰️ Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O **SpaceApp** é uma aplicação web desenvolvida em **React** que apresenta uma galeria de fotos espaciais com foco em **componentização, layout responsivo e gerenciamento de estado**.
 
-## React Compiler
+O projeto foi desenvolvido do zero como parte da **trilha de React da Alura**, passando por todas as etapas de um projeto real: da criação ao deploy.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📸 Galeria de imagens espaciais
+- 🏷️ Filtro dinâmico por **tags**
+- ❤️ Sistema de **favoritos**
+- 🔍 Modal de **imagem expandida**
+- 🖼️ Seção de imagens **populares**
+- 🎨 Layout fiel ao **Figma**
+- 🧩 Componentização completa
+- 🌐 Deploy em produção
+
+---
+
+## 🧠 O que foi praticado
+
+- Criação de projeto com **Vite**
+- Estruturação de layout desktop
+- **styled-components** para estilização
+- Flexbox e CSS Grid
+- Gerenciamento de estado com `useState`
+- Comunicação entre componentes (props)
+- Filtro de dados a partir de arquivos `.json`
+- Uso da pasta `public` para assets
+- Boas práticas de organização de código
+- Versionamento com **Git**
+- Publicação com **Vercel**
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- **React**
+- **Vite**
+- **JavaScript (ES6+)**
+- **styled-components**
+- **React Icons**
+- **HTML5 & CSS3**
+- **Git & GitHub**
+- **Vercel**
+
+---
+
+## 🧑‍💻 Autor
+
+**Bruno do Prado**  
+Estagiário de Análise e Desenvolvimento de Sistemas — **Desbravador Software**  
+Aluno da **Alura**  
+Projeto desenvolvido com foco em aprendizado e portfólio.
+
+---
+
+## 🏆 Conquista
+
+Este projeto representa a conclusão de um ciclo importante de aprendizado em **React**, consolidando conceitos fundamentais e boas práticas de desenvolvimento front-end.
+
+**Missão cumprida. Hora de comemorar! 🎉🚀**
+
+---
+
+## 📂 Estrutura do projeto
+
+```txt
+src/
+ └─ componentes/
+    ├─ Banner
+    ├─ BarraLateral
+    ├─ BarraPopulares
+    ├─ Cabecalho
+    ├─ Footer
+    ├─ Galeria
+    │  ├─ Imagem
+    │  │  └─ ImagemZoom
+    │  └─ Tags
+    └─ EstilosGlobais
+public/
+ └─ imagens/
+    ├─ galeria
+    ├─ populares
+    └─ sociais
