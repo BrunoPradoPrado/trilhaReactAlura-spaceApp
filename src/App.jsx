@@ -7,23 +7,28 @@ import Galeria          from "./componentes/Galeria"
 import bannerBackground from "/assets/banner.png"
 import fotos            from "./fotos.json"
 import { useState }     from "react"
+import Footer from "./componentes/Footer"
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
   min-height: 100vh;
-  padding   : 1rem 1.5rem;
+
+  display       : flex;
+  flex-direction: column;
 `
 
 const AppContainer = styled.div`
-  width : 1440px;
-  margin: 0 auto;
-  
+  width    : 1440px;
+  margin   : 0 auto;
   max-width: 100%;
+
+  flex: 1;
 `
 
 const LayoutPrincipal = styled.div`
-  display: flex;
-  gap    : 24px; 
+  display   : flex;
+  gap       : 24px; 
+  padding   : 1rem 1.5rem;
 `
 
 const ConteudodaGaleria = styled.section`
@@ -72,9 +77,9 @@ const App = () => {
             />
           </ConteudodaGaleria>
         </LayoutPrincipal>
-
       </AppContainer>
 
+        <Footer />
     </FundoGradiente>
   )
 }
