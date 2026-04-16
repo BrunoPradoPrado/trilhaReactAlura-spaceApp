@@ -7,7 +7,6 @@ import Galeria          from "./componentes/Galeria"
 import bannerBackground from "/assets/banner.png"
 import fotos            from "./fotos.json"
 import { useState }     from "react"
-import BarraPopulares   from "./componentes/Galeria/BarraPopulares"
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -35,6 +34,22 @@ const ConteudodaGaleria = styled.section`
 
 const App = () => {
   const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos)
+  const [tagAtiva      , setTagAtiva] = useState(0)
+
+  const filtrarFotos = (tagId) => {
+    setTagAtiva(tagId)
+
+    if (tagId === 0) {
+      setFotosDaGaleria(fotos)
+      return
+    }
+
+    const fotosFiltradas = fotos.filter(
+      foto => foto.tagId === tagId
+    )
+
+    setFotosDaGaleria(fotosFiltradas)
+  }
 
   return (
     
@@ -50,7 +65,11 @@ const App = () => {
               texto  = {'A galeria mais completa de fotos do espaço!'}
               imagem = {bannerBackground}
             />
-            <Galeria fotos = {fotosDaGaleria} />
+            <Galeria 
+              fotos           = {fotosDaGaleria}
+              tagSelecionada  = {tagAtiva}
+              onSelecionarTag = {filtrarFotos}
+            />
           </ConteudodaGaleria>
         </LayoutPrincipal>
 

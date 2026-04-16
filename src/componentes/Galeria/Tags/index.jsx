@@ -36,9 +36,7 @@ const TagButton = styled.button`
   }
 `
 
-const Tags = () => {
-  const [tagAtiva, setTagAtiva] = useState(0)
-
+const Tags = ({ tagSelecionada, onSelecionarTag }) => {
   return (
     <TagDiv>
       <TituloTags>Busque por tags:</TituloTags>
@@ -46,9 +44,9 @@ const Tags = () => {
       <ListaTags>
         {tags.map(tag => (
           <TagButton
-            key     = {tag.id}
-            $ativo  = {tag.id === tagAtiva}
-            onClick = {() => setTagAtiva(tag.id)}
+            key={tag.id}
+            $ativo={tag.id === tagSelecionada}
+            onClick={() => onSelecionarTag(tag.id)}
           >
             {tag.titulo}
           </TagButton>
@@ -57,5 +55,6 @@ const Tags = () => {
     </TagDiv>
   )
 }
+
 
 export default Tags
