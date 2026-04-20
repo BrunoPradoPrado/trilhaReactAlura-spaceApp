@@ -8,14 +8,19 @@ const CampoTextoEstilizado = styled.div`
   width      : 100%;
   max-width  : 602px;
   height     : 56px;
+  
+  @media (max-width: 768px) {
+    max-width: 100%;
+    height   : 48px;
+  }
 
   padding    : 0 24px;
 
   background : linear-gradient(
     180deg,
     #061b38 0%,
-    #041833 100%
-  );
+    #041833 100%)
+  ;
 
   border-radius: 15px;
   position     : relative;

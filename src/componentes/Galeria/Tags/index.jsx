@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styled       from 'styled-components'
 import tags         from './tags.json'
 
@@ -12,13 +11,21 @@ const TagDiv = styled.div`
 const ListaTags = styled.div`
   display: flex;
   gap    : 12px;
+
+  @media (max-width: 768px){
+
+  }
 `
 
 const TituloTags = styled.h2`
-    color       : #d9d9d9;
-    font-family : 'GandhiSansRegular';
-    font-weight : 300;
-    margin-right: 3rem;
+  color: #d9d9d9;
+  font-family: 'GandhiSansRegular';
+  font-weight: 300;
+  margin-right: 3rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const TagButton = styled.button`
