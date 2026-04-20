@@ -10,15 +10,26 @@ const fotosPopulares = [
   "foto-5.png",
 ]
 
+
 const ColunaFotos = styled.section`
-    display       : flex;
-    flex-direction: column;
-    gap           : 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `
 
+
 const Imagem = styled.img`
-    max-width    : 212px;
-    border-radius: 20px;
+  max-width: 212px;
+  border-radius: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 280px;
+  }
 `
 
 const Botao = styled.button`
