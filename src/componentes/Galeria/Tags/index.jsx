@@ -13,7 +13,7 @@ const ListaTags = styled.div`
   gap    : 12px;
 
   @media (max-width: 768px){
-
+    flex-wrap: wrap;
   }
 `
 

@@ -6,13 +6,21 @@ import Imagem         from "./Imagem"
 import BarraPopulares from "./BarraPopulares"
 
 const GaleriaContainer = styled.div`
-    display: flex;
+  display: flex;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 32px;
+  }
 `
 
 const SecaoFluida = styled.section`
-    flex-grow   : 1;
-    margin-right: 1rem;
+  flex-grow: 1;
+  margin-right: 1rem;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
 `
 
 const SecaoFotos = styled.section`

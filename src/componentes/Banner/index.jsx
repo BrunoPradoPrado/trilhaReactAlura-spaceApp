@@ -34,6 +34,14 @@ const TituloBanner = styled.h1`
   transform  : translateY(-50%);
 
   margin     : 0;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    max-width: 90%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
 `
 
 
