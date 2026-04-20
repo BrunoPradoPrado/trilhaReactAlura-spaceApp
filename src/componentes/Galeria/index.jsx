@@ -19,7 +19,12 @@ const SecaoFotos = styled.section`
   display              : grid;
   grid-template-columns: repeat(2, 1fr);
   gap                  : 24px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
+
 
 
 const Galeria = ( { fotos = [], tagSelecionada, onSelecionarTag } ) => {

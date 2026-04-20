@@ -11,6 +11,11 @@ const BannerEstilizado = styled.div`
   background-repeat  : no-repeat;
 
   border-radius: 32px;
+
+  @media (max-width: 768px) {
+    height: 200px;
+    border-radius: 16px;
+  }
 `
 
 const TituloBanner = styled.h1`

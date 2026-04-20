@@ -7,7 +7,7 @@ import Galeria          from "./componentes/Galeria"
 import bannerBackground from "/assets/banner.png"
 import fotos            from "./fotos.json"
 import { useState }     from "react"
-import Footer from "./componentes/Footer"
+import Footer           from "./componentes/Footer"
 
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -18,17 +18,25 @@ const FundoGradiente = styled.div`
 `
 
 const AppContainer = styled.div`
-  width    : 1440px;
-  margin   : 0 auto;
+  width: 1440px;
+  margin: 0 auto;
   max-width: 100%;
-
   flex: 1;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const LayoutPrincipal = styled.div`
-  display   : flex;
-  gap       : 24px; 
-  padding   : 1rem 1.5rem;
+  display: flex;
+  gap: 24px;
+  padding: 1rem 1.5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
 `
 
 const ConteudodaGaleria = styled.section`

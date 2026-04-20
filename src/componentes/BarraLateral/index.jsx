@@ -4,7 +4,10 @@ const ListaEstilizada = styled.ul`
     list-style: none;
     padding   : 0;
     margin    : 0;
-    width     : 212;
+    width     : 212px;
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 const BarraLateral = () => {
